@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @HunySodar
 - 👀 I’m interested in computer knowledge
-- 🌱 I’m currently learning some famous language
+- 🌱 And now I’m currently learning some famous language
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 
