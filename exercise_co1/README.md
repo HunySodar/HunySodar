@@ -1,1 +1,1 @@
-It records some exercise.
+It is just an example.
