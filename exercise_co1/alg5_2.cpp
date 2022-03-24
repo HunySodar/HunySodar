@@ -11,20 +11,20 @@ int n, w;
 
 void dfs(int i, int tw, int tv, int op[])
 {
-    if (i > n)				//找到一个叶子结点
+    if (i > n)	//找到一个叶子结点
     {
-        if (tw == w && tv > maxv)		//找到一个满足条件的更优解,保存 
+        if (tw == w && tv > maxv)	//找到一个满足条件的更优解,保存 
         {
             maxv = tv;
             for (int j = 1; j <= n; j++)
                 x[j] = op[j];
         }
     }
-    else					//尚未找完所有物品
+    else	//尚未找完所有物品
     {
-        op[i] = 1;				//选取第i个物品
+        op[i] = 1;		//选取第i个物品
         dfs(i + 1, tw + W[i], tv + V[i], op);
-        op[i] = 0;				//不选取第i个物品,回溯
+        op[i] = 0;		//不选取第i个物品,回溯
         dfs(i + 1, tw, tv, op);
     }
 }
